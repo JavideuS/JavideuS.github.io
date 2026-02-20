@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Gonzalez Villasmil - Robotics Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #004F90;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .links a {
+            color: #004F90;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #004F90;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #004F90;
+            padding-bottom: 10px;
+        }
+        
+        .project {
+            margin-bottom: 30px;
+        }
+        
+        .project:last-child {
+            margin-bottom: 0;
+        }
+        
+        .project h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .project-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .project ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .project li {
+            margin-bottom: 5px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            background: #e8f4f8;
+            color: #004F90;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .paper-link {
+            display: inline-block;
+            background: #004F90;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        
+        .paper-link:hover {
+            background: #003a6b;
+        }
+        
+        footer {
+            text-align: center;
+            color: #666;
+            margin-top: 40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Javier Gonzalez Villasmil</h1>
+            <p class="subtitle">Robotics Engineering Student | URJC Madrid</p>
+            <div class="links">
+                <a href="mailto:javideus1000@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/javideus" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/JavideuS" target="_blank">💻 GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>
+                Third-year Robotics Engineering student at Universidad Rey Juan Carlos with a focus on 
+                optimization algorithms, path planning, and autonomous systems. Recently completed Erasmus 
+                exchange at Sapienza Università di Roma studying Machine Learning and Autonomous Mobile Robots.
+            </p>
+            <p style="margin-top: 15px;">
+                Experienced in C++, Python, ROS2, and quantum-inspired optimization methods. Passionate about 
+                bridging theoretical optimization with practical robotic systems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Research & Projects</h2>
+            
+            <div class="project">
+                <h3>🔬 Scalable Multi-Robot Path Planning via QUBO</h3>
+                <p class="project-meta">June 2025 - February 2026 | Pre-print on arXiv</p>
+                <p>
+                    Developed a novel framework for multi-robot coordination using Quadratic Unconstrained Binary 
+                    Optimization. Achieved >95% variable reduction through BFS-based preprocessing and demonstrated 
+                    near-optimal solutions in dense environments.
+                </p>
+                <ul>
+                    <li>Formulated path planning as QUBO with adaptive penalty design for collision avoidance</li>
+                    <li>Implemented time-windowed decomposition for quantum hardware compatibility</li>
+                    <li>Benchmarked classical vs quantum-inspired solvers with reproducible results</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">QUBO</span>
+                    <span class="tag">Pennylane</span>
+                    <span class="tag">DWave</span>
+                    <span class="tag">NumPy</span>
+                </div>
+                <a href="https://arxiv.org/abs/2602.14799" class="paper-link" target="_blank">📄 Read Paper on arXiv</a>
+                <a href="https://github.com/JavideuS/Spooky" class="paper-link" target="_blank" style="background: #333; margin-left: 10px;">💻 View Code</a>
+            </div>
+
+            <div class="project">
+                <h3>🤖 Hexapod Robot - Adaptive Legged Locomotion</h3>
+                <p class="project-meta">2024, 2026 - Present | In Development</p>
+                <p>
+                    Designing and building a hexapod robot with adaptive gait control for terrain navigation. 
+                    Implementing full software stack in ROS2 with focus on inverse kinematics and stability.
+                </p>
+                <ul>
+                    <li>Inverse kinematics solver for 18-DOF leg configuration</li>
+                    <li>Tripod gait pattern implementation with sensor-based obstacle avoidance</li>
+                    <li>Gazebo simulation integrated with hardware testing pipeline</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">ROS2</span>
+                    <span class="tag">Gazebo</span>
+                    <span class="tag">FreeCAD</span>
+                </div>
+                <a href="https://github.com/JavideuS/robotsito" class="paper-link" target="_blank" style="background: #333;">💻 View Code</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="project">
+                <h3>Universidad Rey Juan Carlos</h3>
+                <p class="project-meta">Sept 2023 - June 2027 (Expected)</p>
+                <p><strong>BE in Robotics Software Engineering</strong></p>
+                <p style="margin-top: 5px;">Algorithms & Data Structures, Software Architecture for Robots, Applied Calculus, Linear Algebra</p>
+            </div>
+            
+            <div class="project">
+                <h3>Sapienza Università di Roma</h3>
+                <p class="project-meta">Sept 2025 - Jan 2026</p>
+                <p><strong>Erasmus Exchange</strong></p>
+                <p style="margin-top: 5px;">Machine Learning, Autonomous Mobile Robots, Digital Control Systems</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p><strong>Programming:</strong> Python, C++, C</p>
+            <p><strong>Robotics:</strong> ROS2, Gazebo, FreeCAD, Kinematics, Motion Planning</p>
+            <p><strong>ML & Optimization:</strong> NumPy, SciPy, QUBO, Simulated Annealing, QAOA</p>
+            <p><strong>Quantum Computing:</strong> Pennylane, DWave Ocean, QAOA</p>
+            <p><strong>Tools:</strong> Git, Linux, Docker, Jupyter</p>
+            <p><strong>Languages:</strong> Spanish (Native), English (C1), Italian (A2)</p>
+        </section>
+
+        <footer>
+            <p>Last updated: February 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
